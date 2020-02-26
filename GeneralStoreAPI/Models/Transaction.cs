@@ -18,7 +18,7 @@ namespace GeneralStoreAPI.Models
         public int CustomerId { get; set; }
         public virtual Customer Customer { get; set; }
         public DateTime DateOfTransaction { get; set; }
-        public decimal TotalCost => Product.Price * ProductCount;
+        public decimal TotalCost => Product.Price * ProductCount * 1.07m;
         public int ProductCount { get; set; }
     }
 }
